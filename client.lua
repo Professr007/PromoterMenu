@@ -16,7 +16,7 @@ local cooldown = false
 RegisterCommand("pvozilo", function()
     ESX.TriggerServerCallback("esx_marker:fetchUserRank", function(playerRank) -- esx_marker:fetchUserRank -- -- OVDJE STAVLJATE SVOJ CALLBACK
   --ESX.TriggerServerCallback("esx:proveriRank", function(playerRank)
-        if playerRank == "owner" then
+        if playerRank == "promoter" then
             if not cooldown then            
             ESX.ShowNotification('PMenu: Vozilo spawnovano!')
             TriggerEvent('esx:spawnVehicle', automobil)
@@ -40,7 +40,7 @@ RegisterCommand("ppopravi", function()
     local vozilo = GetVehiclePedIsIn(igrac)
     ESX.TriggerServerCallback("esx_marker:fetchUserRank", function(playerRank) -- esx_marker:fetchUserRank -- -- OVDJE STAVLJATE SVOJ CALLBACK
         --ESX.TriggerServerCallback("esx:proveriRank", function(playerRank)
-        if playerRank == "owner" then
+        if playerRank == "promoter" then
             if not cooldown then 
             ESX.ShowNotification('PMenu: Vozilo popravljeno!')
             SetVehicleFixed(vozilo)
