@@ -2,7 +2,7 @@ fx_version 'adamant'
 
 game 'gta5'
 
-description 'PromoterMenu'
+description 'Promoter Menu'
 author 'Professr'
 version 'v1.0.0'
 
