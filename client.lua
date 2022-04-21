@@ -11,8 +11,8 @@ end)
 local automobil = "sanchez"
 local cooldown = 5*60 -- 5 minuta 
 local cooldown = false 
---- Automobil
 
+--- Automobil
 RegisterCommand("pvozilo", function()
     ESX.TriggerServerCallback("esx_marker:fetchUserRank", function(playerRank) -- esx_marker:fetchUserRank -- -- OVDJE STAVLJATE SVOJ CALLBACK
   --ESX.TriggerServerCallback("esx:proveriRank", function(playerRank)
